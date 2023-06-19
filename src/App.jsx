@@ -1,16 +1,16 @@
 import "./styles.css"
-
+import { WeeklyTracker } from "./WeeklyTracker"
+import { NewTodoForm } from "./NewTodoForm"
+import { MonthlyDisplay } from "./MonthlyDisplay"
 
 export default function App(){
   return (
     <>
-     <flex> box</flex>
-     <form className="new-item-form">
-      <div className="form-row">
-        <label htmlFor="item">new item</label>
-        <input type="text" id="item"></input>
-       </div>
-     </form> 
+    <h1>Monthly Tracker</h1>
+    <MonthlyDisplay />
+    < NewTodoForm />
+     
+     <h1 className="header">Todo List</h1>
     </>
   )
 
