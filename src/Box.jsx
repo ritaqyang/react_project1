@@ -8,7 +8,7 @@ export function Box(){
     setClicked(!clicked)
   }
   
-  const colorClasses = clicked ? 'clicked' : 'box'; 
+  const colorClasses = clicked ? 'clicked' : 'box-'; 
   
   return (
       <>
