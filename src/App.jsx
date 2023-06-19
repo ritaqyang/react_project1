@@ -8,6 +8,9 @@ export default function App(){
     <>
     <h1>Monthly Tracker</h1>
     <MonthlyDisplay />
+
+    <MonthlyDisplay />
+    <MonthlyDisplay />
     < NewTodoForm />
      
      <h1 className="header">Todo List</h1>

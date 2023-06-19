@@ -1,6 +1,6 @@
 import react, { useState} from 'react';
 
-export function Box(){
+export function Box(props){
     
   const[clicked, setClicked] = useState(false);
   
@@ -12,7 +12,7 @@ export function Box(){
   
   return (
       <>
-       <div className={colorClasses} onClick={handleClick}></div>
+       <div className={colorClasses} onClick={handleClick}>{props.day}</div>
       </>
   )
 }
