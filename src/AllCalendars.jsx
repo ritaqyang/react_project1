@@ -6,12 +6,10 @@ export function AllCalendars(){
         <div className="calendar-container">
             <MonthlyDisplay />
             <MonthlyDisplay />
-        
-        </div>
-        <div className="calendar-container">
             <MonthlyDisplay />
             <MonthlyDisplay />
         </div>
+       
         </>
     )
 }
