@@ -3,6 +3,7 @@ import { WeeklyTracker } from "./WeeklyTracker"
 import { NewTodoForm } from "./NewTodoForm"
 import { MonthlyDisplay } from "./MonthlyDisplay"
 import { AllCalendars } from "./AllCalendars"
+import { EmailForm } from "./EmailForm"
 
 export default function App(){
   return (
@@ -12,7 +13,9 @@ export default function App(){
    
     < NewTodoForm />
      
-     <h1 className="header">Todo List</h1>
+    <h1 className="header">Todo List</h1>
+    <EmailForm />
+
     </>
   )
 
