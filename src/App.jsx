@@ -1,22 +1,46 @@
-import "./styles.css"
-import { WeeklyTracker } from "./components /WeeklyTracker/WeeklyTracker.component"
-import { NewTodoForm } from "./NewTodoForm"
-import { MonthlyDisplay } from "./components /box/MonthlyDisplay/MonthlyDisplay"
-import { AllCalendars } from "./components /AllCalendars/AllCalendars.component"
-import { EmailForm } from "./EmailForm"
+import { Routes, Route } from 'react-router-dom';
+import { Fragment } from 'react';
+import Todo from './routes/new-to-do/todo.component';
+import { Outlet, Link } from 'react-router-dom'; 
+import Home from './routes/home/home.component';
 
-export default function App(){
+const Navigation = () => {
   return (
-    <>
-    <h1>Monthly Tracker</h1>
-    <AllCalendars/>
-   
-    < NewTodoForm />
-     
-    <h1 className="header">Todo List</h1>
-    <EmailForm />
+    <Fragment>
+      
+      <div className='navigation'>
+        <Link className='logo-container' to='/'>
+          <div>Logo</div>
 
-    </>
+        </Link>
+        <div className='nav-links-container'>
+          <Link className='nav-link' to='/Todo'>
+            New To-do's 
+          </Link>
+        </div>
+      </div>
+
+
+      <Outlet />
+    
+
+    </Fragment>
+
   )
-
 }
+
+
+const App = () => {
+  return (
+
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path='Todo' element={<Todo />} />
+
+      </Route>
+    </Routes>
+  )
+};
+
+export default App; 

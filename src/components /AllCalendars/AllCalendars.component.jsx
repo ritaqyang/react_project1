@@ -1,6 +1,6 @@
 import { MonthlyDisplay } from "./components /box/MonthlyDisplay/MonthlyDisplay";
 
-export function AllCalendars(){
+const AllCalendars = () => {
     return(
         <>
         <div className="calendar-container">
@@ -13,3 +13,5 @@ export function AllCalendars(){
         </>
     )
 }
+
+export default AllCalendars;
