@@ -1,4 +1,4 @@
-import { MonthlyDisplay } from "./MonthlyDisplay";
+import { MonthlyDisplay } from "./components /box/MonthlyDisplay/MonthlyDisplay";
 
 export function AllCalendars(){
     return(

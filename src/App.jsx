@@ -1,8 +1,8 @@
 import "./styles.css"
-import { WeeklyTracker } from "./WeeklyTracker"
+import { WeeklyTracker } from "./components /WeeklyTracker/WeeklyTracker.component"
 import { NewTodoForm } from "./NewTodoForm"
-import { MonthlyDisplay } from "./MonthlyDisplay"
-import { AllCalendars } from "./AllCalendars"
+import { MonthlyDisplay } from "./components /box/MonthlyDisplay/MonthlyDisplay"
+import { AllCalendars } from "./components /AllCalendars/AllCalendars.component"
 import { EmailForm } from "./EmailForm"
 
 export default function App(){

@@ -1,4 +1,4 @@
-import { WeeklyTracker } from "./WeeklyTracker";
+import { WeeklyTracker } from "../../../WeeklyTracker";
 
 
 export function MonthlyDisplay(){

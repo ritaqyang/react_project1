@@ -1,5 +1,5 @@
 import react, { useState } from 'react';
-import {Box} from "./Box"; 
+import {Box} from "../box/Box.component"; 
 
 export function WeeklyTracker(){
     
